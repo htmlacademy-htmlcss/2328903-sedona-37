@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a href="index.html" class="logo">
           <img src="images/logo.svg" alt="Логотип города Седона" width="138" height="64">
@@ -39,15 +40,15 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link booking-hotel" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <section class="filter">
+    <main class="main" data-test="main">
+      <section class="filter" data-test="filter">
         <h1>Гостиницы Седоны</h1>
-        <div>
+        <div class="breadcrumbs">
           <a href="index.html">
             <img src="images/home_breadcrumbs.svg" alt="link on home page" width="13" height="15">
           </a>
@@ -101,7 +102,7 @@
           <button class="reset">Сбросить</button>
         </form>
       </section>
-      <section data-test="catalog">
+      <section class="catalog" data-test="catalog">
         <h2>Найдено гостиниц: 38</h2>
         <select name="sorting" id="sorting">
           <option value="cheap">Сначала дешевые</option>
@@ -139,14 +140,11 @@
               <a class="button-more" href="#">подробнее</a>
               <button type="button">в избранное</button>
             </div>
-            <div class="stars-and-rank">
-              <div class="stars">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-              </div>
-              <p>Рейтинг: <span>8,5</span></p>
+            <div class="wrapper">
+              <img src="images/rating-star-4.svg" width="90" height="17" alt="Рейтинг гостиницы четыри звезды">
+              <span class="product-card-rating">
+                Рейтинг: 8,5
+              </span>
             </div>
           </li>
           <li class="hotel-item">
@@ -162,14 +160,11 @@
               <a class="button-more" href="#">подробнее</a>
               <button type="button">в избранном</button>
             </div>
-            <div class="stars-and-rank">
-              <div class="stars">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-              </div>
-              <p>Рейтинг: <span>9,2</span></p>
+            <div class="wrapper">
+              <img src="images/rating-star-4.svg" width="90" height="17" alt="Рейтинг гостиницы четыри звезды">
+              <span class="product-card-rating">
+                Рейтинг: 9,2
+              </span>
             </div>
           </li>
           <li class="hotel-item">
@@ -185,13 +180,11 @@
               <a class="button-more" href="#">подробнее</a>
               <button type="button">в избранное</button>
             </div>
-            <div class="stars-and-rank">
-              <div class="stars">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-              </div>
-              <p>Рейтинг: <span>6,9</span></p>
+            <div class="wrapper">
+              <img src="images/rating-star-3.svg" width="66" height="17" alt="Рейтинг гостиницы три звезды">
+              <span class="product-card-rating">
+                Рейтинг: 6,9
+              </span>
             </div>
           </li>
           <li class="hotel-item">
@@ -207,13 +200,11 @@
               <a class="button-more" href="#">подробнее</a>
               <button type="button">в избранное</button>
             </div>
-            <div class="stars-and-rank">
-              <div class="stars">
-                <img src="images/star.svg" alt="rating star">
-                <img src="images/star.svg" alt="rating star">
-              </div>
-              <p>Рейтинг: <span>5,0</span></p>
-            </div>
+            <div class="wrapper">
+              <img src="images/rating-star-2.svg" width="42" height="17" alt="Рейтинг гостиницы две звезды">
+              <span class="product-card-rating">
+                Рейтинг: 5,0
+              </span>
           </li>
         </ul>
         <ul class="pagination">
@@ -237,7 +228,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
@@ -246,7 +237,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a href="https://vk.com/htmlacademy">

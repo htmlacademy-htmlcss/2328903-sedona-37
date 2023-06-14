@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a href="index.html" class="logo">
           <img src="images/logo.svg" alt="Логотип города Седона" width="138" height="64">
@@ -25,36 +26,37 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-favorite" href="#">
               <span class="visually-hidden">
                 Понравилось
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link booking-hotel" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <section class="hero">
-        <h1 class="visually-hidden">sedona</h1>
-        <img src="images/hero-index.jpg" alt="welcom to the gorgeous sedona,
-        because the grand canyon sucks">
-        <img src="images/divider.svg" alt="divider">
+    <main class="main" data-test="main">
+      <section class="hero" data-test="hero">
+        <div>
+          <h1 class="visually-hidden">sedona</h1>
+          <p><img src="images/hero-title.svg" alt="welcom to the gorgeous sedona,
+            because the grand canyon sucks"></p>
+        </div>
         <h2 class="about-sedona">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section class="advantages" id="advantages">
+      <section class="advantages" id="advantages" data-test="advantages">
         <div class="advantage-item">
           <h3 class="advantages-h3">Настоящий городок</h3>
           <div class="advantages-separator"></div>
@@ -86,8 +88,10 @@
           <div class="advantages-separator"></div>
           <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
-        <h2 class="slogan-name">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p>Опытный персонал и качественное обслуживание!</p>
+        <div class="advantage-item slogan">
+          <h2 class="slogan-name">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+          <p>Опытный персонал и качественное обслуживание!</p>
+        </div>
         <ul class="advantage-list">
           <li class="advantage-item">
             <img src="images/house.svg" alt="Дом" width="75" height="72">
@@ -109,15 +113,17 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search">
+      <section class="hotel-search" data-test="search">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,
+        <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#">
-          Поиск гостиницы в Седоне
-        </a>
+        <div class="button">
+          <a href="#">
+            Поиск гостиницы в Седоне
+          </a>
+        </div>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
@@ -126,7 +132,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a href="https://vk.com/htmlacademy">
@@ -144,9 +150,9 @@
           </a>
         </li>
       </ul>
-      <span class=”phone”>
+      <address class=”phone”>
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </span>
+      </address>
       <a href="https://htmlacademy.ru/">
         <img src="images/logo_htmlacademy.svg" alt="html academy website" width="115" height="33">
       </a>
