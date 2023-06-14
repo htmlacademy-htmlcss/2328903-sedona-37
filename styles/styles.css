@@ -198,6 +198,7 @@
   .subscribe {
     background-image: url(../images/subscribe.jpg);
   }
+
   .subscribe h2 {
     font-weight: 700;
     font-size: 30px;
@@ -212,4 +213,17 @@
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
+  }
+
+  /* Footer */
+
+  .footer address a {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: normal;
   }
