@@ -74,7 +74,8 @@
 
   .logo {
     display: block;
-    margin: 0 auto;
+    margin-right: 30px;
+    width: 140px;
   }
 
   .navigation-user {
@@ -362,6 +363,25 @@
   }
 
   /* Catalog */
+  .catalog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog .catalog-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .catalog-wrapper h2 {
+    margin-right: auto;
+  }
+
+  .layout-filter-list {
+    width: 160px;
+    margin-left: auto;
+  }
+
   .catalog h2 {
     font-weight: 700;
     font-size: 30px;
@@ -369,7 +389,9 @@
     text-transform: uppercase;
     color: #000000;
   }
-
+  .hotel-list{
+    width: 1060px;
+  }
   .about-hotel {
     font-weight: 700;
     font-size: 24px;
