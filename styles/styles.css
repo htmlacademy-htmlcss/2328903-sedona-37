@@ -29,11 +29,13 @@
     width: 1200px;
     margin: 0 auto;
 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-
   }
 
   .visually-hidden {
@@ -57,9 +59,28 @@
   }
 
   /* Navigation */
+  .navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+  }
 
   .navigation-list {
+    width: 507px;
+    margin: 0;
+    padding: 0;
     list-style: none;
+  }
+
+  .logo {
+    display: block;
+    margin-right: 30px;
+    width: 140px;
+  }
+
+  .navigation-user {
+    max-width: 268px;
+    margin-left: auto;
   }
 
   .navigation-search {
@@ -90,6 +111,17 @@
     text-transform: uppercase;
   }
 
+  /* Main */
+
+  .main-container {
+    flex-grow: 1;
+  }
+
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   /* Hero */
 
   .hero div {
@@ -118,13 +150,29 @@
     background-color: #82B3D3;
   }
 
-  .advantages-h3 {
+  .advantage-h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+  }
+
+  .advantage-separator {
+    width: 60px;
+    height: 2px;
+    background-image: url("../images/divider.svg");
+    margin: 0 auto;
+  }
+
+  .first-advantage,
+  .third-advantage {
+    background: rgba(131, 179, 211, 0.12);
+  }
+
+  .second-advantage {
+    background-color: #FFFFFF;
   }
 
   .advantage-item p {
@@ -157,6 +205,23 @@
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+  }
+
+  .advantage-list .advantage-item {
+    width: 400px;
+  }
+
+  .advantage-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .advantage-list img {
+    display: block;
+    margin: 0 auto;
   }
 
   .advantage-list p {
@@ -216,6 +281,21 @@
   }
 
   /* Footer */
+  .footer-container {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+  }
+
+  .social-list {
+    width: 142px;
+    margin-right: 42px;
+  }
+
+  .logo-htmlacademy {
+    margin-left: auto;
+    max-width: 115px;
+  }
 
   .footer address a {
     font-weight: 400;
@@ -283,6 +363,25 @@
   }
 
   /* Catalog */
+  .catalog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog .catalog-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .catalog-wrapper h2 {
+    margin-right: auto;
+  }
+
+  .layout-filter-list {
+    width: 160px;
+    margin-left: auto;
+  }
+
   .catalog h2 {
     font-weight: 700;
     font-size: 30px;
@@ -290,7 +389,9 @@
     text-transform: uppercase;
     color: #000000;
   }
-
+  .hotel-list{
+    width: 1060px;
+  }
   .about-hotel {
     font-weight: 700;
     font-size: 24px;
