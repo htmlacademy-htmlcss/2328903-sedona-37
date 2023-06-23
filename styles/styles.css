@@ -136,7 +136,6 @@
     background-repeat: no-repeat;
     padding-top: 51px;
     padding-bottom: 82px;
-    margin-bottom: 69px;
   }
 
   .about-sedona {
@@ -334,10 +333,24 @@
     margin-bottom: 54px;
   }
 
-  .hotel-search .button {
+  .search-button {
+    display: flex;
+    justify-content: center;
+    max-width: 592px;
+    border: none;
+    background-color: #756157;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
     text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 8px 50px;
+    margin: 0;
     margin-bottom: 96px;
   }
+
 
   .hotel-search a {
     font-size: 20px;
@@ -387,18 +400,40 @@
     display: flex;
     width: 1060px;
     margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 30px;
   }
 
   .social-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     width: 142px;
     margin-right: 42px;
+  }
+
+  .vk {
+    padding: 13px 11.67px;
+  }
+
+  .telegram {
+    padding: 12px 14.67px 12.9px 14.67px;
+  }
+
+  .youtube {
+    padding: 11.5px 12.67px;
   }
 
   .logo-htmlacademy {
     margin-left: auto;
     max-width: 115px;
   }
-
+  .footer address {
+    margin: 0 auto;
+  }
   .footer address a {
     font-weight: 400;
     font-size: 40px;
