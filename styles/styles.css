@@ -209,7 +209,7 @@
     color: #000000;
   }
 
-  .advantage-item .advantage-card-p  {
+  .advantage-item .advantage-card-p {
     color: #333333;
   }
 
@@ -218,6 +218,11 @@
     height: 2px;
     background-image: url("../images/divider.svg");
     margin: 0 auto;
+  }
+
+  .advantage-card-wrapper .advantage-separator {
+    background: rgba(0, 0, 0, 0.30);
+
   }
 
   .first-advantage,
