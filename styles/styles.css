@@ -368,6 +368,10 @@
     padding: 96px 258px 104px 258px;
   }
 
+  .subscribe-catalog {
+    background-image: none;
+  }
+
   .subscribe h2 {
     font-weight: 700;
     font-size: 30px;
@@ -386,6 +390,14 @@
     color: #FFFFFF;
     margin: 0;
     margin-bottom: 54px;
+  }
+
+  .subscribe-catalog h2 {
+    color: #000000;
+  }
+
+  .subscribe-catalog p {
+    color: #333333;
   }
 
   .subscribe form {
@@ -563,6 +575,11 @@
     flex-direction: column;
   }
 
+  .catalog-container {
+    margin: 50px 70px;
+    margin-bottom: 60px;
+  }
+
   .catalog .catalog-wrapper {
     display: flex;
     flex-direction: row;
@@ -585,6 +602,21 @@
     margin-left: auto;
   }
 
+  .layout-filter-item {
+    margin-right: 8px;
+  }
+
+  .layout-filter-item:last-child {
+    margin-right: 0;
+  }
+
+  .layout-filter-button {
+    padding: 14px 12px;
+    border-radius: 4px;
+    border: 2px solid #000;
+
+  }
+
   .catalog h2 {
     font-weight: 700;
     font-size: 30px;
@@ -594,7 +626,22 @@
   }
 
   .hotel-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 1060px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .hotel-item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hotel-item:last-child {
+    margin: 0;
   }
 
   .about-hotel {
@@ -634,17 +681,35 @@
     color: #333333;
   }
 
+  .pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .pagination-item:not(:last-child) {
+    margin-right: 8px;
+  }
+
   .pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    padding: 11.364px 0 12.636px 0;
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #000000;
+    color: #FFFFFF;
     background-color: #82B3D3;
     border-radius: 4px;
   }
 
-  .pagination-current {
+  .pagination-current, .more {
+    color: #000000;
     background-color: #F2F2F2;
   }
