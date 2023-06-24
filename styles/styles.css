@@ -431,9 +431,11 @@
     margin-left: auto;
     max-width: 115px;
   }
+
   .footer address {
     margin: 0 auto;
   }
+
   .footer address a {
     font-weight: 400;
     font-size: 40px;
@@ -451,6 +453,12 @@
   .filter {
     background-image: url(../images/hero-catalog.jpg);
     background-repeat: no-repeat;
+    padding: 70px;
+    padding-top: 35px;
+  }
+
+  .filter form {
+    display: flex;
   }
 
   .filter h1 {
@@ -458,6 +466,18 @@
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumbs img {
+    margin: auto 0;
+    margin-right: 10px;
   }
 
   .breadcrumbs span {
@@ -465,11 +485,29 @@
     color: #FFFFFF;
   }
 
+  .filter fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-right: 70px;
+  }
+
   .filter legend {
+    padding: 0;
+    margin-bottom: 32px;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+  }
+
+  .filter p {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .filter p:last-child {
+    margin-bottom: 0;
   }
 
   .filter label {
@@ -478,7 +516,22 @@
     color: #FFFFFF;
   }
 
+  .price-range {
+    display: flex;
+    margin-top: 36px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 50px;
     background-color: #82B3D3;
     border-radius: 4px;
     font-weight: 700;
@@ -487,9 +540,13 @@
     color: #FFFFFF;
     text-transform: uppercase;
     border-style: none;
+    margin-bottom: 32px;
   }
 
   .reset {
+    padding: 8px 50px;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -497,6 +554,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     border-style: none;
+    background: transparent;
   }
 
   /* Catalog */
@@ -514,7 +572,15 @@
     margin-right: auto;
   }
 
+  .sorting-container {
+    display: flex;
+  }
+
   .layout-filter-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     width: 160px;
     margin-left: auto;
   }
