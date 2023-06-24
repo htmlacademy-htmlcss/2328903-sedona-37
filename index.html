@@ -53,60 +53,66 @@
             <p><img src="images/hero-title.svg" alt="welcom to the gorgeous sedona,
             because the grand canyon sucks"></p>
           </div>
-          <h2 class="about-sedona">Седона — небольшой городок в Аризоне,
+          <h2 class="about-sedona">Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!</h2>
           <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
         <section class="advantage" id="advantage" data-test="advantages">
-          <div class="advantage-item">
-            <h3 class="advantage-h3">Настоящий городок</h3>
-            <div class="advantage-separator"></div>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="advantage-photo-wrapper">
+            <div class="advantage-item">
+              <h3 class="advantage-h3">Настоящий городок</h3>
+              <div class="advantage-separator"></div>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="advantage-item advantage-img">
+              <img src="images/photo-1.jpg" alt="Фото города" width="800" height="385">
+            </div>
           </div>
-          <div class="advantage-item advantage-img">
-            <img src="images/photo-1.jpg" alt="Фото города" width="800" height="385">
+          <div class="advantage-card-wrapper">
+            <div class="advantage-item">
+              <h3 class="advantage-h3">Небольшая площадь</h3>
+              <div class="advantage-separator"></div>
+              <p class="advantage-card-p">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="advantage-item">
+              <h3 class="advantage-h3">Красивая дорога</h3>
+              <div class="advantage-separator"></div>
+              <p class="advantage-card-p">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="advantage-item">
+              <h3 class="advantage-h3">Мало туристов</h3>
+              <div class="advantage-separator"></div>
+              <p class="advantage-card-p">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </div>
-          <div class="advantage-item">
-            <h3 class="advantage-h3">Небольшая площадь</h3>
-            <div class="advantage-separator"></div>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="advantage-item">
-            <h3 class="advantage-h3">Красивая дорога</h3>
-            <div class="advantage-separator"></div>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="advantage-item">
-            <h3 class="advantage-h3">Мало туристов</h3>
-            <div class="advantage-separator"></div>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-          <div class="advantage-item advantage-img">
-            <img src="images/photo-2.jpg" alt="Фото каньона" width="800" height="385">
-          </div>
-          <div class="advantage-item">
-            <h3 class="advantage-h3">Там есть мост дьявола</h3>
-            <div class="advantage-separator"></div>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <div class="advantage-photo-wrapper">
+            <div class="advantage-item advantage-img">
+              <img src="images/photo-2.jpg" alt="Фото каньона" width="800" height="385">
+            </div>
+            <div class="advantage-item">
+              <h3 class="advantage-h3">Там есть мост дьявола</h3>
+              <div class="advantage-separator"></div>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
           </div>
           <div class="advantage-item slogan">
             <h2 class="slogan-name">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
             <p>Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="advantage-list">
-            <li class="advantage-item first-advantage">
+            <li class="advantage-item">
               <img src="images/house.svg" alt="Дом" width="75" height="72">
               <h3 class="recommend-h3">Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле,
                 всё как в кино!</p>
             </li>
-            <li class="advantage-item second-advantage">
+            <li class="advantage-item">
               <img src="images/food.svg" alt="Бургер" width="75" height="72">
               <h3 class="recommend-h3">Еда</h3>
               <p>Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantage-item third-advantage">
+            <li class="advantage-item">
               <img src="images/present.svg" alt="Подарок" width="75" height="72">
               <h3 class="recommend-h3">Сувениры</h3>
               <p>Не только китайского,
@@ -118,11 +124,9 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <div class="button">
-            <a href="#">
-              Поиск гостиницы в Седоне
-            </a>
-          </div>
+          <button class="search-button">
+            Поиск гостиницы в Седоне
+          </button>
         </section>
         <section class="subscribe" data-test="subscribe">
           <h2>Подпишитесь на рассылку</h2>
@@ -138,17 +142,17 @@
       <div class="footer-container">
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://vk.com/htmlacademy">
+            <a class="social-link vk" href="https://vk.com/htmlacademy">
               <img src="images/vk.svg" alt="vk" width="24" height="14">
             </a>
           </li>
           <li class="social-item">
-            <a href="https://t.me/htmlacademy">
+            <a class="social-link telegram" href="https://t.me/htmlacademy telegram">
               <img src="images/telegram.svg" alt="telegram" width="18" height="16">
             </a>
           </li>
           <li class="social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
               <img src="images/youtube.svg" alt="youtube" width="22" height="17">
             </a>
           </li>
