@@ -133,9 +133,9 @@
 
   .hero div {
     background-image: url("../images/hero-index.jpg");
+    height: 485px;
     background-repeat: no-repeat;
     padding-top: 51px;
-    padding-bottom: 82px;
   }
 
   .about-sedona {
@@ -340,6 +340,7 @@
     border: none;
     background-color: #756157;
     border-radius: 4px;
+    cursor: pointer;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
