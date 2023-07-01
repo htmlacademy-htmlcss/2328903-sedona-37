@@ -57,6 +57,7 @@
   }
 
   /* Navigation */
+
   .navigation {
     display: flex;
     width: 1060px;
@@ -133,9 +134,9 @@
 
   .hero div {
     background-image: url("../images/hero-index.jpg");
+    height: 485px;
     background-repeat: no-repeat;
     padding-top: 51px;
-    padding-bottom: 82px;
   }
 
   .about-sedona {
@@ -180,6 +181,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 102px 85px;
   }
 
   .advantage-card-wrapper {
@@ -188,7 +190,6 @@
   }
 
   .advantage-card-wrapper .advantage-item {
-
     background-color: #83B3D31F;
     padding: 103px 85px;
   }
@@ -245,6 +246,7 @@
   .advantage-item p {
     text-align: center;
     color: #FFFFFF;
+    margin: 0;
   }
 
   .slogan {
@@ -335,11 +337,11 @@
 
   .search-button {
     display: flex;
-    justify-content: center;
     max-width: 592px;
     border: none;
     background-color: #756157;
     border-radius: 4px;
+    cursor: pointer;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -347,7 +349,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 8px 50px;
-    margin: 0;
+    margin: auto;
     margin-bottom: 96px;
   }
 
@@ -363,6 +365,7 @@
   }
 
   /* Subscribe */
+
   .subscribe {
     background-image: url(../images/subscribe.jpg);
     padding: 96px 258px 104px 258px;
@@ -626,18 +629,16 @@
   }
 
   .hotel-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
     width: 1060px;
     margin: 0;
     padding: 0;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
     list-style: none;
-  }
-
-  .hotel-item {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #E6E6E6;
   }
 
   .hotel-item:last-child {
