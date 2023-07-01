@@ -57,6 +57,7 @@
   }
 
   /* Navigation */
+
   .navigation {
     display: flex;
     width: 1060px;
@@ -364,6 +365,7 @@
   }
 
   /* Subscribe */
+
   .subscribe {
     background-image: url(../images/subscribe.jpg);
     padding: 96px 258px 104px 258px;
@@ -627,18 +629,16 @@
   }
 
   .hotel-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
     width: 1060px;
     margin: 0;
     padding: 0;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
     list-style: none;
-  }
-
-  .hotel-item {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #E6E6E6;
   }
 
   .hotel-item:last-child {
