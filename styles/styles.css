@@ -641,8 +641,15 @@
     border-bottom: 1px solid #E6E6E6;
   }
 
-  .hotel-item:last-child {
-    margin: 0;
+  .hotel-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-item-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .about-hotel {
@@ -710,7 +717,8 @@
     border-radius: 4px;
   }
 
-  .pagination-current, .more {
+  .pagination-current,
+  .more {
     color: #000000;
     background-color: #F2F2F2;
   }
