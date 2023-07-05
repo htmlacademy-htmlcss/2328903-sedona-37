@@ -60,14 +60,15 @@
 
   .navigation {
     display: flex;
-    min-width: 1060px;
+    max-width: 1060px;
     margin: 0 auto;
   }
 
   .navigation-list {
+    margin-left: 28px;
     display: flex;
     flex-wrap: wrap;
-    min-width: 507px;
+    width: 507px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -75,28 +76,14 @@
 
   .logo {
     display: block;
-    margin-right: 30px;
+    margin-bottom: -10px;
     width: 140px;
+    z-index: 1;
   }
 
   .navigation-user {
     max-width: 268px;
     margin-left: auto;
-  }
-
-  .navigation-user .navigation-link {
-    min-width: 18px;
-    min-height: 23px;
-  }
-
-  .navigation-search {
-    background-image: url("../images/search.svg");
-    background-repeat: no-repeat;
-  }
-
-  .navigation-favorite {
-    background-image: url("../images/favorite.svg");
-    background-repeat: no-repeat;
   }
 
   .navigation-link {
@@ -110,11 +97,40 @@
     text-decoration: none;
   }
 
+  .navigation-user .navigation-link {
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  .navigation-search,
+  .navigation-favorite {
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    padding: 22px 12px;
+  }
+
+  .navigation-favorite {
+    position: relative;
+    background-image: url("../images/favorite.svg");
+  }
+
+  .link-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   .booking-hotel {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 8px 34px;
     font-size: 16px;
     line-height: 20px;
-    color: #ffffff;
+    border-radius: 4px;
+    color: #FFFFFF;
     background-color: #756157;
+    text-decoration: none;
     text-align: center;
     text-transform: uppercase;
   }
@@ -132,33 +148,38 @@
 
   /* Hero */
 
-  .hero div {
+  .hero-image-wrapper {
     background-image: url("../images/hero-index.jpg");
     min-height: 485px;
     background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image {
+    display: block;
+    margin: 0 auto;
     padding-top: 51px;
   }
 
-  .about-sedona {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
+  .hero-wrapper {
+    padding: 69px 274.5px;
+  }
+
+  .hero-subtitle {
+    margin-top: 0;
+    margin-bottom: 25px;
     text-align: center;
     text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
     color: #000000;
   }
 
-  .hero p {
-    margin: 0;
-    margin-bottom: 90px;
+  .hero-description {
+    margin-top: 0;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-  }
-
-  .hero h2 {
-    margin: 0;
-    margin-bottom: 25px;
   }
 
   /* Advantages */
@@ -671,11 +692,13 @@
     margin: 0;
     margin-bottom: 16px;
   }
+
   .more-and-like {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
   }
+
   .button-more {
     background-color: #756157;
     font-weight: 700;

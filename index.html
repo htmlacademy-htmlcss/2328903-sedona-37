@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -40,7 +41,7 @@
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item link-wrapper">
             <a class="navigation-link booking-hotel" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -49,16 +50,18 @@
     <main class="main main-container" data-test="main">
       <div class="page-container">
         <section class="hero" data-test="hero">
-          <div>
-            <h1 class="visually-hidden">sedona</h1>
-            <p><img src="images/hero-title.svg" alt="welcom to the gorgeous sedona,
-            because the grand canyon sucks"></p>
+          <h1 class="visually-hidden">Отдых в Седоне</h1>
+          <div class="hero-image-wrapper">
+            <img class="hero-image" src="images/hero-title.svg"
+              alt="Добро пожаловать в великолепную Седону, Потому что Гранд-Каньон отстой!">
           </div>
-          <h2 class="about-sedona">Седона — небольшой городок в Аризоне,<br>
-            заслуживающий большего!</h2>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
         <section class="advantage" id="advantage" data-test="advantages">
+          <div class="hero-wrapper">
+            <h2 class="hero-subtitle">Седона — небольшой городок в Аризоне,<br>
+              заслуживающий большего!</h2>
+            <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <div class="advantage-photo-wrapper">
             <div class="advantage-item">
               <h3 class="advantage-h3">Настоящий городок</h3>
