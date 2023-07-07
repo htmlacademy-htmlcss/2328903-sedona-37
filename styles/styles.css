@@ -34,7 +34,7 @@
     flex-direction: column;
     min-height: 100%;
 
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans";
     font-size: 18px;
     line-height: 21px;
   }
@@ -111,7 +111,7 @@
     text-underline-position: under;
     text-decoration-thickness: 2px;
     text-underline-offset: 19.5px;
-}
+  }
 
   .navigation-user .navigation-link {
     min-width: 20px;
@@ -254,10 +254,10 @@
     padding: 112.5px 85px;
   }
 
-  .advantage-item::after {
+  .advantage-h3-separator:after {
     position: absolute;
     content: '';
-    top: 199px;
+    top: 196.5px;
     left: 170px;
     width: 60px;
     height: 2px;
@@ -365,7 +365,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-bottom: 96px;
   }
 
   .advantage-list img {
@@ -391,8 +390,16 @@
   }
 
   /* Search */
+  .hotel-search-container {
+    display: flex;
+    flex-direction: column;
+    width: 592px;
+    padding: 96.5px 304px;
+    align-items: center;
+    margin: 0 auto;
+  }
 
-  .hotel-search h2 {
+  .hotel-search-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -403,7 +410,7 @@
     margin-bottom: 20px;
   }
 
-  .hotel-search p {
+  .hotel-search-description {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -412,12 +419,11 @@
   }
 
   .search-button {
-    display: flex;
-    max-width: 592px;
     border: none;
     background-color: #756157;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -425,8 +431,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 8px 50px;
-    margin: auto;
-    margin-bottom: 96px;
+    margin: 0;
   }
 
   .search-button:hover,
@@ -441,16 +446,6 @@
 
   .search-button:disabled {
     background-color: #E5E5E5;
-  }
-
-  .hotel-search a {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #756157;
-    text-transform: uppercase;
-    text-decoration: none;
   }
 
   /* Subscribe */
@@ -506,6 +501,7 @@
     flex-direction: row;
     justify-content: center;
   }
+
   .mail-input {
     width: 410px;
     margin: 0;
@@ -514,6 +510,7 @@
     border-radius: 4px 0 0 4px;
     border: none;
   }
+
   .subscribe-button {
     cursor: pointer;
     margin: 0;
@@ -561,6 +558,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
+    margin-right: auto;
     padding: 0;
     list-style: none;
     width: 156px;
