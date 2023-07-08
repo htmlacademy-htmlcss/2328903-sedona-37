@@ -505,10 +505,19 @@
   .mail-input {
     width: 410px;
     margin: 0;
-    padding: 23px 22px 16px 20px;
-    background: #F2F2F2;
     border-radius: 4px 0 0 4px;
     border: none;
+    padding: 23px 22px 16px 20px;
+    background: #F2F2F2;
+  }
+
+  .mail-input::placeholder {
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.6;
+    line-height: 24px;
   }
 
   .subscribe-button {
@@ -725,8 +734,8 @@
 
   /* Checkbox and Radio */
 
-  .checkbox-container,
-  .radio-container {
+    .checkbox-container,
+    .radio-container {
     display: block;
     position: relative;
     cursor: pointer;
@@ -1024,7 +1033,7 @@
   .select-list {
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
-    background-position: center right 20px;
+    background-position: center right 14px;
     width: 292px;
     font: inherit;
     color: #333333;
@@ -1036,8 +1045,8 @@
     appearance: none;
     cursor: pointer;
     outline: none;
-    transition: ease-in-out 0.3s;
-    padding: 14px 18px;
+    transition: border 0.2s ease;
+    padding: 14px 35px 14px 20px;
   }
 
   .select-list:hover,
@@ -1110,7 +1119,7 @@
     padding: 20px;
   }
 
-  .hotel-item img {
+  .hotel-item-photo {
     display: block;
     object-fit: contain;
     margin: 0;
@@ -1279,7 +1288,8 @@
 
   .pagination-more {
     background-color: #FFFFFF;
-}
+  }
+
   .pagination-current,
   .pagination-more {
     color: #000000;
