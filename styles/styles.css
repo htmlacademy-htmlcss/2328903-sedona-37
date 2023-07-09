@@ -118,7 +118,7 @@
   }
 
   .navigation-search,
-  .navigation-favorite {
+  .navigation-favourite {
     background-image: url("../images/search.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -126,9 +126,25 @@
     padding: 22px 12px;
   }
 
-  .navigation-favorite {
+  .navigation-favourite {
     position: relative;
     background-image: url("../images/favorite.svg");
+  }
+
+  .favourite-count {
+    position: absolute;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 10px;
+    color: #FFFFFF;
+    background-color: #7DB54F;
+    padding: 5px;
+    box-sizing: border-box;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 10px;
+    top: 12px;
+    left: 18px;
   }
 
   .link-wrapper {
