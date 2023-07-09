@@ -372,7 +372,7 @@
   }
 
   .advantage-list .advantage-item {
-    padding: 80px 85px;
+    padding: 80px 85px 81px 85px;
     position: inherit;
   }
 
@@ -399,6 +399,10 @@
     color: #000000;
     margin: 0;
     margin-bottom: 30px;
+  }
+
+  .souvenir {
+    margin-bottom: 26px;
   }
 
   .advantage-list p {
@@ -481,12 +485,15 @@
 
   .subscribe-container {
     display: flex;
-    padding: 96px 258px 106px 258px;
+    padding: 96px 258px 104px 258px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  .subscribe-light{
+    background-color: #FFFFFF;
+    padding-bottom: 107px;
+  }
   .subscribe h2 {
     margin: 0;
     font-size: 30px;
@@ -1330,4 +1337,357 @@
   .pagination-current,
   .pagination-more {
     color: #000000;
+  }
+
+
+  .modal-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(242, 242, 242, 0.80);
+    z-index: 2;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .modal-container-close {
+    display: none;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+
+  .modal {
+    position: relative;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+    margin: auto;
+  }
+
+  .modal-booking {
+    box-sizing: border-box;
+    min-width: 717px;
+    min-height: 448px;
+    padding: 55px 70px;
+  }
+
+  .modal-close-button {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 67px;
+    right: 53px;
+    border: none;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .modal-close-button:hover,
+  .modal-close-button:focus {
+    background-color: #E6E6E6;
+  }
+
+  .modal-close-button:active {
+    background-color: #E6E6E6;
+    opacity: 0.3;
+  }
+
+  .modal-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 64px;
+  }
+
+  .subtitle-booking-check {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+
+  .control-label {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+
+  .booking-form-search {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 577px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #83B3D3;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 18px 77px;
+  }
+
+  .booking-form-search:hover,
+  .booking-form-search:focus {
+    background-color: #68A2CA;
+  }
+
+  .booking-form-search:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .booking-form-field {
+    position: relative;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    min-width: 440px;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    opacity: 0.6;
+    padding: 12px 20px;
+    padding-right: 36px;
+  }
+
+  .booking-form-field:hover {
+    background-color: #E6E6E6;
+  }
+
+  .booking-form-field:focus {
+    opacity: 1;
+  }
+
+  .booking-button-calendar {
+    position: absolute;
+    right: 93px;
+    background-image: url("../images/calendar-modal.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    background-position: bottom 1px center;
+    border: none;
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  .field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  .count-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 42px;
+  }
+
+  .number-passenger {
+    box-sizing: border-box;
+    background: #F2F2F2;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+    width: 110px;
+    border: none;
+    padding: 14px 48px;
+  }
+
+  .input-adults {
+    text-align: center;
+  }
+
+  .control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+  }
+
+  .control-label {
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .number-passenger::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  .booking-form-input {
+    margin: 0;
+    padding: 0;
+  }
+
+  .booking-form-button {
+    position: relative;
+  }
+
+  .minus-button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: -12px;
+    right: 77px;
+    cursor: pointer;
+  }
+
+  .plus-button {
+    position: absolute;
+    border: none;
+    top: -8px;
+    right: 5px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .minus-button:hover path,
+  .plus-button:hover path,
+  .minus-button:focus path,
+  .plus-button:focus path {
+    fill: #000000;
+    fill-opacity: 1;
+  }
+
+  .minus-button:active path,
+  .plus-button:active path,
+  .minus-button-child:active path,
+  .plus-button-child:active path {
+    opacity: 0.3;
+  }
+
+  .negative-button-child {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 0;
+    right: 79px;
+    cursor: pointer;
+  }
+
+  .plus-button-child {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 4px;
+    right: 8px;
+    cursor: pointer;
+  }
+
+  .negative-button-child:hover path,
+  .plus-button-child:hover path,
+  .negative-button-child:focus path,
+  .plus-button-child:focus path {
+    fill: #000000;
+    fill-opacity: 1;
+  }
+
+  .tooltip {
+    position: absolute;
+    top: 8px;
+    right: -71px;
+  }
+
+  .tooltip-toggle {
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #83B3D3;
+    width: 26px;
+    box-sizing: border-box;
+    border-radius: 26px;
+    border: none;
+    top: 1px;
+    right: 229px;
+    padding: 7px 12px;
+  }
+
+  .tooltip-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #242424;
+  }
+
+  .children {
+    margin-right: 82px;
+  }
+
+  .tooltip-text {
+    position: absolute;
+    /* display: none; */
+    width: 256px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: #333333;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+    color: #FFFFFF;
+    top: 42px;
+    right: 114px;
+    z-index: 1;
+    padding: 21px 18px 22px 23px;
+  }
+
+  .tooltip-toggle:hover + .tooltip-text,
+  .tooltip-toggle:focus + .tooltip-text {
+    display: block;
+  }
+
+  .tooltip-text::before {
+    position: absolute;
+    content: "";
+    top: -9px;
+    left: 50%;
+    width: 19px;
+    height: 9px;
+    background-image: url("../images/triangle.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+  }
+
+  .error {
+    display: block;
+    color: #FF5757;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+    margin-left: 157px;
+    margin-bottom: 23px;
+  }
+
+  .free-room {
+    display: block;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333;
+    margin: 0;
+    margin-left: 157px;
+    margin-bottom: 23px;
   }
