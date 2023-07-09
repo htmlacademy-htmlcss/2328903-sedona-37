@@ -667,6 +667,7 @@
 
   .breadcrumbs {
     display: flex;
+    align-items: flex-start;
     margin-bottom: 38px;
     gap: 10px;
   }
@@ -694,7 +695,7 @@
     height: 11px;
     background-image: url('../images/breadcrumbs_arrow.svg');
     background-repeat: no-repeat;
-    background-position: center -5px;
+    background-position: center;
   }
 
   .breadcrumbs-link:hover {
@@ -734,8 +735,8 @@
 
   /* Checkbox and Radio */
 
-    .checkbox-container,
-    .radio-container {
+  .checkbox-container,
+  .radio-container {
     display: block;
     position: relative;
     cursor: pointer;
@@ -779,6 +780,7 @@
 
   .checkbox:checked ~ .checkbox-style::after {
     display: block;
+    background-position: center;
   }
 
   .radio-style {
@@ -805,6 +807,7 @@
 
   .radio:checked ~ .radio-style::after {
     display: block;
+    background-position: center;
   }
 
   .checkbox-container:hover,
@@ -1165,17 +1168,17 @@
     color: #FFFFFF;
   }
 
-  .button-favorite:hover,
-  .button-favorite:focus {
+  .button-favourite:hover,
+  .button-favourite:focus {
     background-color: #68A2CA;
   }
 
-  .button-favorite:active {
+  .button-favourite:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #82B3D3;
   }
 
-  .button-favorite:disabled {
+  .button-favourite:disabled {
     background-color: #E5E5E5;
   }
 
@@ -1225,6 +1228,20 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+  }
+
+  .button-more:hover,
+  .button-more:focus {
+    background-color: #615048;
+  }
+
+  .button-more:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #756157;
+  }
+
+  .button-more:disabled {
+    background-color: #E5E5E5;
   }
 
   .product-card-rating {
