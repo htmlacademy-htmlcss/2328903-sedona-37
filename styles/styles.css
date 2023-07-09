@@ -1640,7 +1640,7 @@
 
   .tooltip-text {
     position: absolute;
-    /* display: none; */
+    display: none;
     width: 256px;
     box-sizing: border-box;
     font-size: 16px;
