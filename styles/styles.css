@@ -120,6 +120,7 @@
   .navigation-search,
   .navigation-favourite {
     background-image: url("../images/search.svg");
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -195,6 +196,7 @@
 
   .hero-image-wrapper {
     background-image: url("../images/hero-index.jpg");
+    background-color: #6587ad;
     min-height: 485px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -467,7 +469,8 @@
   /* Subscribe */
 
   .subscribe {
-    background-image: url(../images/subscribe.jpg);
+    background-image: url("../images/subscribe.jpg");
+    background-color: #90aab9;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -665,6 +668,7 @@
 
   .filter {
     background-image: url("../images/hero-catalog.jpg");
+    background-color: #6a8cb2;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 38px 70px 57px;
@@ -709,7 +713,8 @@
     content: "";
     width: 8px;
     height: 11px;
-    background-image: url('../images/breadcrumbs_arrow.svg');
+    background-image: url("../images/breadcrumbs_arrow.svg");
+    background-color: #4f789c;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -874,7 +879,6 @@
     font-size: 18px;
     outline: none;
     outline-offset: 0;
-    ;
     padding: 11px 20px;
   }
 
