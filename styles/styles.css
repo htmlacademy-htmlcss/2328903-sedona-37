@@ -5,7 +5,6 @@
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/pt-sans-regular.woff2") format("woff2");
-
     font-display: swap;
 
   }
@@ -490,10 +489,12 @@
     justify-content: center;
     align-items: center;
   }
-  .subscribe-light{
+
+  .subscribe-light {
     background-color: #FFFFFF;
     padding-bottom: 107px;
   }
+
   .subscribe h2 {
     margin: 0;
     font-size: 30px;
@@ -1379,7 +1380,7 @@
     box-sizing: border-box;
     min-width: 717px;
     min-height: 448px;
-    padding: 55px 70px;
+    padding: 55px 70px 59px;
   }
 
   .modal-close-button {
