@@ -789,80 +789,58 @@
 
   /* Checkbox and Radio */
 
-  .checkbox-container,
-  .radio-container {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-    font-family: inherit;
-    font-weight: 400;
-    line-height: 23px;
-    font-size: 18px;
-    margin-bottom: 16px;
-    padding-left: 36px;
-  }
-
   .checkbox,
   .radio {
     position: absolute;
     opacity: 0;
   }
 
-  .checkbox-style {
-    position: absolute;
+  .checkbox + .filter-form-lable,
+  .radio + .filter-form-lable {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    -webkit-user-select: none;
+            user-select: none;
+    cursor: pointer;
+  }
+
+  .checkbox + .filter-form-lable::before,
+  .radio + .filter-form-lable::before {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: #ffffff;
+  }
+
+  .checkbox + .filter-form-lable::before {
     border-radius: 4px;
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    top: 2px;
-    left: 0;
   }
 
-  .checkbox-style::after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-
-  .checkbox-container .checkbox-style::after {
-    background-image: url("../images/check.svg");
-    width: 12px;
-    height: 10px;
-    margin: 5px 0 0 4px;
-  }
-
-  .checkbox:checked ~ .checkbox-style::after {
-    display: block;
-    background-position: center;
-  }
-
-  .radio-style {
-    position: absolute;
+  .radio + .filter-form-lable::before {
     border-radius: 50%;
-    left: 0;
-    top: 2px;
-    height: 20px;
-    width: 20px;
-    background-color: #ffffff;
   }
 
-  .radio-style::after {
-    content: "";
-    position: absolute;
-    display: none;
+  .checkbox:checked + .filter-form-lable::before {
+    background-image: url("../images/check.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14px 10px;
   }
 
-  .radio-container .radio-style::after {
-    background-image: url("../images/radio.svg");
-    width: 10px;
-    height: 10px;
-    margin: 5px 0 0 5px;
-  }
-
-  .radio:checked ~ .radio-style::after {
-    display: block;
-    background-position: center;
+  .radio:checked + .filter-form-lable::before {
+    background-image: url("../images/radio-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 13px 10px;
   }
 
   .checkbox-container:hover,
@@ -874,15 +852,16 @@
   .radio-container:active {
     opacity: 0.3;
   }
-  .checkbox-style:focus,
-  .radio-style:focus {
+
+  .checkbox:focus + .filter-form-lable::before,
+  .radio:focus + .filter-form-lable::before {
     box-shadow: 0 0 0 3px #83b3d3;
   }
 
   .checkbox-container:disabled,
   .radio-container:disabled {
-    opacity: 0.6;
-    color: #0c4368;
+    color: #e5e5e5;
+    ;
   }
 
   /* Price */
@@ -1097,7 +1076,8 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     cursor: pointer;
     outline: none;
     transition: border 0.2s ease;
@@ -1547,7 +1527,8 @@
   }
 
   .number-passenger::-webkit-inner-spin-button {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
   }
 
   .booking-form-input {
