@@ -38,17 +38,23 @@
     line-height: 21px;
   }
 
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
+  .number-passenger,
+  .price-form-field::-webkit-outer-spin-button,
+  .number-passenger,
+  .price-form-field::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
 
-  input[type="number"] {
+  .number-passenger,
+  .price-form-field {
     -moz-appearance: textfield;
   }
-  input[type="number"]:hover,
-  input[type="number"]:focus {
+
+  .number-passenger,
+  .price-form-field:hover,
+  .number-passenger,
+  .price-form-field:focus {
     -moz-appearance: number-input;
   }
 
@@ -1564,6 +1570,7 @@
 
   .booking-form-button {
     position: relative;
+    display: block;
   }
 
   .minus-button {
@@ -1608,6 +1615,10 @@
     cursor: pointer;
   }
 
+  .second-negative-button-child {
+    top: -38px
+  }
+
   .plus-button-child {
     position: absolute;
     border: none;
@@ -1615,6 +1626,11 @@
     top: 4px;
     right: 8px;
     cursor: pointer;
+  }
+
+  .second-plus-button-child {
+    top: -33px;
+    right: 7px;
   }
 
   .negative-button-child:hover path,
