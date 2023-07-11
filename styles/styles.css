@@ -26,13 +26,11 @@
     background-color: #ffffff;
     color: #333333;
     width: 1200px;
+    min-height: 100%;
     margin: 0 auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-
     font-family: "PT Sans";
     font-size: 18px;
     line-height: 21px;
@@ -191,7 +189,8 @@
 
   .link-wrapper {
     display: flex;
-    align-items: center;
+    margin-top: 14px;
+    margin-bottom: auto;
   }
 
   .booking-hotel {
@@ -332,16 +331,13 @@
     background-color: #82B3D3;
   }
 
-  .advantage-text-wrapper::after {
-    position: absolute;
-    content: '';
-    top: 186px;
-    left: 170px;
+  .advantage-text-wrapper p::before {
+    content: " ";
+    display: block;
+    margin: 30px auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.302);
     width: 60px;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.3);
   }
-
   .advantage-img {
     display: inherit;
   }
@@ -353,7 +349,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    margin: 0 auto 62px auto;
+    margin: 0 auto 0 auto;
   }
 
   .advantage-card-wrapper .advantage-h3 {
@@ -368,13 +364,16 @@
     margin: 0 auto;
   }
 
-  .advantage-item .advantage-card-p {
-    color: #333333;
+  .advantage-card-p::before {
+    content: " ";
+    display: block;
+    margin: 30px auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    width: 60px;
   }
 
-  .advantage-card-wrapper .advantage-separator {
-    background: rgba(0, 0, 0, 0.30);
-
+  .advantage-item .advantage-card-p {
+    color: #333333;
   }
 
   .advantage-item p {
