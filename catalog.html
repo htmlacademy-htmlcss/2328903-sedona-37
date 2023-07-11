@@ -105,28 +105,28 @@
               <legend class="filter-legend">
                 <h4 class="filter-form-name cost">Стоимость, &#8381;:</h4>
               </legend>
-                <div class="price-wrapper">
-                  <label class="price-form">
-                    <input class="price-form-field price-form-first" type="number" min="0" max="15000" name="min-price"
-                      value="0">
-                    <span class="price-form-name">от</span>
-                  </label>
-                  <label class="price-form">
-                    <input class="price-form-field price-form-second" type="number" min="0" max="12000" name="max-price"
-                      value="9000">
-                    <span class="price-form-name">до</span>
-                  </label>
+              <div class="price-wrapper">
+                <label class="price-form">
+                  <input class="price-form-field price-form-first" type="number" min="0" max="15000" name="min-price"
+                    value="0">
+                  <span class="price-form-name">от</span>
+                </label>
+                <label class="price-form">
+                  <input class="price-form-field price-form-second" type="number" min="0" max="12000" name="max-price"
+                    value="9000">
+                  <span class="price-form-name">до</span>
+                </label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Ползунок выбора минимальной цены.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Ползунок выбора максимальной цены.</span>
+                  </button>
                 </div>
-                <div class="range-scale">
-                  <div class="range-bar">
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">изменить минимальную цену</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">изменить максимальную цену</span>
-                    </button>
-                  </div>
-                </div>
+              </div>
             </fieldset>
             <div class="filter-buttons">
               <button class="apply" type="submit">Применить</button>
@@ -138,24 +138,24 @@
           <div class="catalog-header-wrapper">
             <h2 class="catalog-header-h2">Найдено гостиниц: 38</h2>
             <div class="catalog-sorting">
-                <select class="select-list" name="sorting" id="sorting">
-                  <option value="cheap">Сначала дешевые</option>
-                  <option value="costly">Сначала дорогие</option>
-                  <option value="rating">По рейтингу</option>
-                </select>
+              <select class="select-list" name="sorting" id="sorting">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="costly">Сначала дорогие</option>
+                <option value="rating">По рейтингу</option>
+              </select>
               <ul class="layout-filters">
                 <li>
-                  <button type="button" class="layout-button current-layout" aria-label="layout filter grid">
+                  <button type="button" class="layout-button current-layout" aria-label="раскладка карточками">
                     <img src="images/list_icon-1.svg" alt="grid-mode" width="16" height="14">
                   </button>
                 </li>
                 <li>
-                  <button type="button" class="layout-button" aria-label="layout filter picture then description">
+                  <button type="button" class="layout-button" aria-label="раскладка картинка снизу подпись">
                     <img src="images/list_icon-2.svg" alt="caption-mode" width="16" height="14">
                   </button>
                 </li>
                 <li>
-                  <button type="button" class="layout-button" aria-label="list filter">
+                  <button type="button" class="layout-button" aria-label="раскладка списком">
                     <img src="images/list_icon-3.svg" alt="list-mod" width="16" height="14">
                   </button>
                 </li>
@@ -164,7 +164,8 @@
           </div>
           <ul class="hotel-list">
             <li class="hotel-item">
-              <img class="hotel-item-photo" src="images/hotel-photo-1.jpg" alt="Amara Resort & Spa">
+              <img class="hotel-item-photo" src="images/hotel-photo-1.jpg" width="300" height="212"
+                alt="Amara Resort & Spa">
               <a href="#" class="hotel-link-h3">
                 <h3 class="hotel-h3">Amara Resort & Spa</h3>
               </a>
@@ -184,7 +185,8 @@
               </div>
             </li>
             <li class="hotel-item">
-              <img class="hotel-item-photo" src="images/hotel-photo-2.jpg" alt="Villas at Poco Diablo">
+              <img class="hotel-item-photo" src="images/hotel-photo-2.jpg" width="300" height="212"
+                alt="Villas at Poco Diablo">
               <a href="#" class="hotel-link-h3">
                 <h3 class="hotel-h3">Villas at Poco Diablo</h3>
               </a>
@@ -204,7 +206,8 @@
               </div>
             </li>
             <li class="hotel-item">
-              <img class="hotel-item-photo" src="images/hotel-photo-3.jpg" alt="Desert Quail Inn">
+              <img class="hotel-item-photo" src="images/hotel-photo-3.jpg" width="300" height="212"
+                alt="Desert Quail Inn">
               <a href="#" class="hotel-link-h3">
                 <h3 class="hotel-h3">Desert Quail Inn</h3>
               </a>
@@ -224,7 +227,7 @@
               </div>
             </li>
             <li class="hotel-item">
-              <img class="hotel-item-photo" src="images/hotel-photo-4.jpg" alt="GreenTree Inn">
+              <img class="hotel-item-photo" src="images/hotel-photo-4.jpg" width="300" height="212" alt="GreenTree Inn">
               <a href="#" class="hotel-link-h3">
                 <h3 class="hotel-h3">GreenTree Inn</h3>
               </a>
@@ -268,7 +271,8 @@
         <section class="subscribe subscribe-catalog" data-test="subscribe">
           <div class="subscribe-container subscribe-light">
             <h2 class="subscribe-catalog-title subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-catalog-description subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscribe-catalog-description subscribe-description">Только полезная информация и никакого спама,
+              честное бойскаутское!</p>
             <label class="visually-hidden" for="email">Ваш e-mail</label>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="email">Ваш e-mail</label>
@@ -283,6 +287,7 @@
       <div class="footer-container">
         <ul class="social-list">
           <li class="social-item">
+            <span class="visually-hidden">вконтакте</span>
             <a class="social-link vk" href="https://vk.com/htmlacademy">
               <svg class="social-link-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="24" height="14" fill="#83B3D3" viewBox="0 0 24 14">
@@ -293,6 +298,7 @@
             </a>
           </li>
           <li class="social-item">
+            <span class="visually-hidden">телеграм</span>
             <a class="social-link telegram" href="https://t.me/htmlacademy">
               <svg class="social-link-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="18" height="16" viewBox="0 0 18 16" fill="#83B3D3">
@@ -302,6 +308,7 @@
             </a>
           </li>
           <li class="social-item">
+            <span class="visually-hidden">ютуб</span>
             <a class="social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
               <svg class="social-link-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="22" height="17" fill="#83B3D3" viewBox="0 0 22 17">

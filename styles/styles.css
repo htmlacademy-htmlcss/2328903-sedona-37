@@ -319,7 +319,7 @@
     background-color: #82b3d3;
   }
 
- .advantage-photo-p::before {
+  .advantage-photo-p::before {
     content: "";
     display: block;
     margin: 30px auto;
@@ -873,6 +873,10 @@
   .checkbox-container:active,
   .radio-container:active {
     opacity: 0.3;
+  }
+  .checkbox-style:focus,
+  .radio-style:focus {
+    box-shadow: 0 0 0 3px #83b3d3;
   }
 
   .checkbox-container:disabled,
