@@ -6,7 +6,6 @@
     font-weight: 400;
     src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
-
   }
 
   @font-face {
@@ -303,7 +302,7 @@
   }
 
   .advantage-card-wrapper .advantage-item:nth-child(2n) {
-    background-color: #83B3D333;
+    background-color: #83b3d333;
   }
 
   .advantage-item {
@@ -395,17 +394,14 @@
   }
 
   .advantage-list .advantage-item {
+    padding: 80px 85px 81px 85px;
+    max-width: 230px;
+    position: inherit;
     background: rgba(131, 179, 211, 0.12);
   }
 
   .advantage-list .advantage-item:nth-child(2n) {
     background-color: #ffffff;
-  }
-
-  .advantage-list .advantage-item {
-    padding: 80px 85px 81px 85px;
-    max-width: 230px;
-    position: inherit;
   }
 
   .advantage-list {
@@ -478,13 +474,13 @@
     background-color: #756157;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 8px 50px;
     margin: 0;
   }
@@ -569,12 +565,12 @@
     border-radius: 4px 0 0 4px;
     border: none;
     padding: 23px 22px 16px 20px;
-    background: #F2F2F2;
+    background: #f2f2f2;
   }
 
   .mail-input::placeholder {
     color: #000000;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     opacity: 0.6;
@@ -588,8 +584,8 @@
     border-radius: 0 4px 4px 0;
     border: none;
     padding: 8px 50px;
-    font-family: 'PT Sans', sans-serif;
-    color: #FFFFFF;
+    font-family: "PT Sans", sans-serif;
+    color: #ffffff;
     font-weight: 700;
     font-size: 20px;
     font-style: normal;
@@ -714,7 +710,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 35px 70px 58px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 50px;
   }
 
@@ -969,7 +965,7 @@
     background-color: #ffffff25;
     width: 287px;
     height: 4px;
-    margin-top: 43px;
+    margin-top: 25px;
   }
 
   .range-bar {
@@ -1221,7 +1217,7 @@
   .button-favourite {
     cursor: pointer;
     padding: 8px 20px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     background-color: #82b3d3;
     border-radius: 4px;
     border: none;
@@ -1251,7 +1247,7 @@
     padding: 8px 18px;
     border-radius: 4px;
     border: none;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     background-color: #7db54f;
   }
 
@@ -1267,17 +1263,6 @@
 
   .active-button:disabled {
     background-color: #e5e5e5;
-  }
-
-  .product-card-rating {
-    padding: 9px 22px 8px 23px;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    ;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
   }
 
   .button-more {
@@ -1319,7 +1304,7 @@
     padding: 9px 22px 8px 23px;
   }
 
-  /* Pagination  */
+  /*  Pagination  */
 
   .pagination {
     display: flex;
@@ -1459,15 +1444,9 @@
     text-transform: capitalize;
   }
 
-  .control-label {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: capitalize;
-  }
-
   .booking-form-search {
     display: inline-block;
+    border: none;
     box-sizing: border-box;
     width: 577px;
     text-align: center;
@@ -1568,6 +1547,10 @@
   }
 
   .control-label {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
     margin: 0;
     margin-right: 40px;
   }

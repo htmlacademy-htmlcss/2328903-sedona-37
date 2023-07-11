@@ -105,7 +105,6 @@
               <legend>
                 <h4 class="filter-form-name cost">Стоимость, &#8381;:</h4>
               </legend>
-              <div class="range">
                 <div class="price-wrapper">
                   <label class="price-form">
                     <input class="price-form-field price-form-first" type="number" min="0" max="15000" name="min-price"
@@ -128,7 +127,6 @@
                     </button>
                   </div>
                 </div>
-              </div>
             </fieldset>
             <div class="filter-buttons">
               <button class="apply" type="submit">Применить</button>
@@ -140,13 +138,11 @@
           <div class="catalog-header-wrapper">
             <h2>Найдено гостиниц: 38</h2>
             <div class="catalog-sorting">
-              <div class="sorting-container">
                 <select class="select-list" name="sorting" id="sorting">
                   <option value="cheap">Сначала дешевые</option>
                   <option value="costly">Сначала дорогие</option>
                   <option value="rating">По рейтингу</option>
                 </select>
-              </div>
               <ul class="layout-filters">
                 <li>
                   <button type="button" class="layout-button current-layout" aria-label="layout filter grid">
@@ -273,8 +269,9 @@
           <div class="subscribe-container subscribe-light">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <label class="visually-hidden" for="email">Ваш e-mail</label>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="mail-input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+              <input class="mail-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
               <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
           </div>
@@ -328,7 +325,7 @@
 
     <div class="modal-container hidden">
       <div class="modal modal-booking modal-container-close">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg width="15" height="15" viewBox="0 0 15 15" fill="black" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -341,14 +338,14 @@
             <p class="field">
               <label class="subtitle-booking-check" for="booking-check">Дата заезда:</label>
               <input class="booking-form-field field" value="27 апреля 2020" type="text" id="booking-check"
-                name="booking-check">
+                name="booking-check" required>
               <button class="booking-button-calendar" type="button"></button>
             </p>
             <span class="error">Мы не можем отправить вас в прошлое.</span>
             <p class="field">
               <label class="subtitle-booking-check" for="booking-departure">Дата выезда:</label>
               <input class="booking-form-field" value="1 сентября 2023" type="text" id="booking-departure"
-                name="booking-departure">
+                name="booking-departure" required>
               <button class="booking-button-calendar" type="button"></button>
             </p>
             <span class="free-room">На эти даты есть свободные номера. Пока есть.</span>
@@ -356,7 +353,7 @@
               <p class="field auth-form-user-options">
                 <label class="booking-form-input control">
                   <span class="control-label">Взрослые:</span>
-                  <input class="number-passenger input-adults" type="number" value="2" name="firm-storе">
+                  <input class="number-passenger input-adults" type="number" value="2" name="firm-storе" required>
                 </label>
                 <label class="booking-form-button">
                   <button class="minus-button" type="button">
@@ -379,7 +376,7 @@
                 <span class="form-label">
                   <span class="booking-form-input control">
                     <span class="control-label children">Дети:</span>
-                    <input class="number-passenger" value="2" type="number" name="firm-storе">
+                    <input class="number-passenger" value="2" type="number" name="firm-storе" required>
                     <label class="booking-form-button">
                       <button class="negative-button-child" type="button">
                         <svg class="negative-button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
