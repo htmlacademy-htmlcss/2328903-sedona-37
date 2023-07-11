@@ -120,6 +120,15 @@
     text-decoration: none;
   }
 
+  .navigation-link:hover:not(.current-link) {
+    color: #756257;
+  }
+
+  .navigation-link:focus-visible {
+    outline: 2px solid #756257;
+    outline-offset: -2px;
+  }
+
   .current-link {
     position: relative;
   }
@@ -170,14 +179,25 @@
     left: 19px;
   }
 
+  .navigation-search:hover,
+  .navigation-favourite:hover {
+    opacity: 0.7;
+  }
+
+  .navigation-search:active,
+  .navigation-favourite:active {
+    opacity: 0.5;
+  }
+
   .link-wrapper {
     display: flex;
     align-items: center;
   }
 
   .booking-hotel {
-    display: inline-block;
+    font-family: inherit;
     font-size: 16px;
+    font-weight: 700;
     line-height: 20px;
     border-radius: 4px;
     color: #FFFFFF;
@@ -1577,15 +1597,15 @@
     position: absolute;
     border: none;
     background-color: transparent;
-    top: -12px;
-    right: 77px;
+    top: -15px;
+    right: 76px;
     cursor: pointer;
   }
 
   .plus-button {
     position: absolute;
     border: none;
-    top: -8px;
+    top: -11px;
     right: 5px;
     background-color: transparent;
     cursor: pointer;
@@ -1610,27 +1630,18 @@
     position: absolute;
     border: none;
     background-color: transparent;
-    top: 0;
-    right: 79px;
+    top: -39px;
+    right: 78px;
     cursor: pointer;
-  }
-
-  .second-negative-button-child {
-    top: -38px
   }
 
   .plus-button-child {
     position: absolute;
     border: none;
     background-color: transparent;
-    top: 4px;
+    top: -35px;
     right: 8px;
     cursor: pointer;
-  }
-
-  .second-plus-button-child {
-    top: -33px;
-    right: 7px;
   }
 
   .negative-button-child:hover path,
