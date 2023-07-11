@@ -327,6 +327,7 @@
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     width: 60px;
   }
+
   .advantage-img {
     display: inherit;
   }
@@ -1071,11 +1072,15 @@
     height: 49px;
     margin-bottom: 40px;
   }
-  .catalog-header-wrapper h2{
+
+  .catalog-header-wrapper h2 {
+    display: flex;
+    align-items: center;
     font-size: 30px;
     line-height: 36px;
-
+    text-transform: uppercase;
   }
+
   .catalog-sorting {
     display: flex;
     min-width: 522px;
@@ -1123,6 +1128,7 @@
 
   .layout-filters {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 9px;
     margin: 0;
