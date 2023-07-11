@@ -38,6 +38,20 @@
     line-height: 21px;
   }
 
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    -moz-appearance: number-input;
+  }
+
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -211,7 +225,7 @@
   }
 
   .hero-wrapper {
-    padding: 69px 274.5px;
+    padding: 69px 271.5px 69px 270px;
   }
 
   .hero-subtitle {
