@@ -291,6 +291,7 @@
 
   .advantage-card-wrapper {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
   }
 
@@ -312,18 +313,6 @@
     padding: 112.5px 85px;
   }
 
-  .advantage-h3-separator:after {
-    position: absolute;
-    content: '';
-    top: 196.5px;
-    left: 170px;
-    width: 60px;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.3);
-    ;
-  }
-
-
   .advantage-text-wrapper {
     position: relative;
     width: 400px;
@@ -335,7 +324,7 @@
     content: " ";
     display: block;
     margin: 30px auto;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.302);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     width: 60px;
   }
   .advantage-img {
@@ -414,11 +403,13 @@
 
   .advantage-list .advantage-item {
     padding: 80px 85px 81px 85px;
+    max-width: 230px;
     position: inherit;
   }
 
   .advantage-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -1154,7 +1145,7 @@
 
 
   .current-layout,
-  .layout-button,
+  .layout-button:hover,
   .layout-button:active {
     border-color: #000000;
   }
@@ -1345,8 +1336,8 @@
   .pagination-link {
     display: inline-block;
     box-sizing: border-box;
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
@@ -1391,7 +1382,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(242, 242, 242, 0.80);
+    background-color: rgba(242, 242, 242, 0.8);
     z-index: 2;
   }
 
