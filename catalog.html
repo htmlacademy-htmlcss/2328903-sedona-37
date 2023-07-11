@@ -53,7 +53,7 @@
     <main class="main main-container" data-test="main">
       <div class="page-container">
         <section class="filter" data-test="filter">
-          <h1>Гостиницы Седоны</h1>
+          <h1 class="filter-h1">Гостиницы Седоны</h1>
           <div class="breadcrumbs">
             <a href="index.html" class="breadcrumbs-link">
               <img src="images/home_breadcrumbs.svg" alt="Cсылка на домашнюю страницу" width="13" height="15">
@@ -62,7 +62,7 @@
           </div>
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-form">
-              <legend>
+              <legend class="filter-legend">
                 <h4 class="filter-form-name">Инфраструктура:</h4>
               </legend>
               <label class="checkbox-container" for="pool">
@@ -82,7 +82,7 @@
               </label>
             </fieldset>
             <fieldset class="filter-form">
-              <legend>
+              <legend class="filter-legend">
                 <h4 class="filter-form-name">Тип жилья:</h4>
               </legend>
               <label class="radio-container" for="hotel">
@@ -102,7 +102,7 @@
               </label>
             </fieldset>
             <fieldset class="filter-form">
-              <legend>
+              <legend class="filter-legend">
                 <h4 class="filter-form-name cost">Стоимость, &#8381;:</h4>
               </legend>
                 <div class="price-wrapper">
@@ -136,7 +136,7 @@
         </section>
         <section class="catalog" data-test="catalog">
           <div class="catalog-header-wrapper">
-            <h2>Найдено гостиниц: 38</h2>
+            <h2 class="catalog-header-h2">Найдено гостиниц: 38</h2>
             <div class="catalog-sorting">
                 <select class="select-list" name="sorting" id="sorting">
                   <option value="cheap">Сначала дешевые</option>
@@ -267,12 +267,13 @@
         </section>
         <section class="subscribe subscribe-catalog" data-test="subscribe">
           <div class="subscribe-container subscribe-light">
-            <h2>Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <h2 class="subscribe-catalog-title subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-catalog-description subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <label class="visually-hidden" for="email">Ваш e-mail</label>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="email">Ваш e-mail</label>
               <input class="mail-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-              <button class="subscribe-button" type="submit">Подписаться</button>
+              <input class="subscribe-button" type="submit" value="Подписаться">
             </form>
           </div>
         </section>

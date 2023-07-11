@@ -319,7 +319,7 @@
     background-color: #82b3d3;
   }
 
-  .advantage-text-wrapper p::before {
+ .advantage-photo-p::before {
     content: "";
     display: block;
     margin: 30px auto;
@@ -365,7 +365,7 @@
     color: #333333;
   }
 
-  .advantage-item p {
+  .advantage-item-p {
     text-align: center;
     color: #ffffff;
     margin: 0;
@@ -386,7 +386,7 @@
     margin-bottom: 20px;
   }
 
-  .slogan p {
+  .slogan-p {
     color: #333333;
     font-size: 22px;
     line-height: 26px;
@@ -412,7 +412,7 @@
     list-style: none;
   }
 
-  .advantage-list img {
+  .advantage-list-img {
     display: block;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -525,7 +525,7 @@
     padding-bottom: 103px;
   }
 
-  .subscribe h2 {
+  .subscribe-title {
     margin: 0;
     font-size: 30px;
     line-height: 36px;
@@ -535,7 +535,7 @@
     margin-bottom: 21px;
   }
 
-  .subscribe p {
+  .subscribe-description {
     margin: 0;
     width: 475px;
     font-size: 22px;
@@ -545,15 +545,15 @@
     margin-bottom: 52.5px;
   }
 
-  .subscribe-catalog h2 {
+  .subscribe-catalog-title {
     color: #000000;
   }
 
-  .subscribe-catalog p {
+  .subscribe-catalog-description {
     color: #333333;
   }
 
-  .subscribe form {
+  .subscribe-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -660,10 +660,6 @@
     width: 115px;
   }
 
-  .footer address {
-    margin: 0 auto;
-  }
-
   .footer .phone-link {
     padding: 14px 12px 14px 0;
     font-size: 40px;
@@ -714,7 +710,7 @@
     margin-bottom: 50px;
   }
 
-  .filter h1 {
+  .filter-h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
@@ -777,6 +773,10 @@
     border: none;
   }
 
+  .filter-legend {
+    padding: 0;
+  }
+
   .filter-form:first-child {
     width: 150px;
     margin-right: 70px;
@@ -785,11 +785,6 @@
   .filter-form:nth-child(2) {
     width: 151px;
     margin-right: 151px;
-  }
-
-  .filter-form-name {
-    margin: 0;
-    padding: 0 0 33px;
   }
 
   /* Checkbox and Radio */
@@ -888,13 +883,14 @@
 
   /* Price */
 
-  .filter-form legend {
+  .filter-form-name {
     text-transform: capitalize;
     font-family: inherit;
     line-height: 24px;
     font-size: 20px;
     font-weight: 700;
-    padding: 0;
+    margin: 0;
+    padding: 0 0 33px;
   }
 
   .price-wrapper {
@@ -1070,7 +1066,7 @@
     margin-bottom: 40px;
   }
 
-  .catalog-header-wrapper h2 {
+  .catalog-header-h2 {
     display: flex;
     align-items: center;
     font-size: 30px;
@@ -1083,15 +1079,6 @@
     min-width: 522px;
     margin-left: auto;
     align-items: center;
-  }
-
-  .catalog-sorting h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    width: 380px;
-    margin: 0;
   }
 
   .select-list {
