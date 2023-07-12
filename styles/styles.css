@@ -30,7 +30,7 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
   }
@@ -279,6 +279,7 @@
   .advantage-photo-wrapper {
     display: flex;
     flex-direction: row;
+    background-color: #82b3d3;
   }
 
   .advantage-photo-wrapper .advantage-item {
@@ -294,25 +295,25 @@
     flex-direction: row;
   }
 
+  .advantage-item {
+    background-color: #82b3d3;
+    width: 400px;
+    text-align: center;
+  }
+
   .advantage-card-wrapper .advantage-item {
     position: relative;
     width: 230px;
-    background-color: #83b3d31f;
+    background-color: rgba(131, 179, 211, 0.12);
     padding: 112.5px 85px;
   }
 
   .advantage-card-wrapper .advantage-item:nth-child(2n) {
-    background-color: #83b3d333;
-  }
-
-  .advantage-item {
-    background-color: #82b3d3;
-    position: relative;
-    min-width: 230px;
-    padding: 112.5px 85px;
+    background-color: rgba(131, 179, 211, 0.2);
   }
 
   .advantage-text-wrapper {
+    box-sizing: border-box;
     position: relative;
     width: 400px;
     padding: 102px 85px;
@@ -328,7 +329,17 @@
   }
 
   .advantage-img {
-    display: inherit;
+    position: relative;
+    width: 800px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .advantage-img img {
+    position: absolute;
+    transform: translateX(-50%);
+    height: 100%;
+    left: 50%;
   }
 
   .advantage-h3 {
@@ -374,7 +385,7 @@
   .slogan {
     background-color: #ffffff;
     padding: 64px 347.5px;
-    position: inherit;
+    width: inherit;
   }
 
   .slogan-name {
@@ -542,15 +553,17 @@
     line-height: 26px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 52.5px;
+    margin-bottom: 53.3px;
   }
 
   .subscribe-catalog-title {
     color: #000000;
+    margin-bottom: 19px;
   }
 
   .subscribe-catalog-description {
     color: #333333;
+    margin-bottom: 53.3px;
   }
 
   .subscribe-form {
@@ -747,18 +760,18 @@
     content: "";
     width: 8px;
     height: 11px;
-    background-image: url("../images/breadcrumbs_arrow.svg");
+    background-image: url("../images/breadcrumbs-arrow.svg");
     background-color: #4f789c;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .breadcrumbs-link:hover {
-    color: #ffffff90;
+    color: rgba(255, 255, 255, 0.56);
   }
 
   .breadcrumbs-link:active {
-    color: #ffffff4d;
+    color: rgba(255, 255, 255, 0.30);
   }
 
   /* Filters */
@@ -806,7 +819,7 @@
     font-weight: 400;
     line-height: 23px;
     -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
     cursor: pointer;
   }
 
@@ -941,7 +954,7 @@
   .range-scale {
     display: block;
     position: relative;
-    background-color: #ffffff25;
+    background-color: rgba(255, 255, 255, 0.14);
     width: 287px;
     height: 4px;
     margin-top: 25px;
@@ -996,7 +1009,7 @@
   }
 
   .reset {
-    border: 3px solid #00000000;
+    border: 3px solid rgba(0, 0, 0, 0);
     color: #ffffff;
     padding: 8px 57px;
   }
@@ -1077,7 +1090,7 @@
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     cursor: pointer;
     outline: none;
     transition: border 0.2s ease;
@@ -1090,8 +1103,8 @@
   }
 
   .select-list:disabled {
-    border: 2px solid #0000004d;
-    color: #0000004d;
+    border: 2px solid rgba(0, 0, 0, 0.30);
+    color: rgba(0, 0, 0, 0.30);
   }
 
   .layout-filters {
@@ -1404,7 +1417,7 @@
     line-height: 36px;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 62px;
   }
 
@@ -1528,7 +1541,7 @@
 
   .number-passenger::-webkit-inner-spin-button {
     -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
   }
 
   .booking-form-input {
@@ -1545,7 +1558,7 @@
     position: absolute;
     border: none;
     background-color: transparent;
-    top: -15px;
+    top: -14px;
     right: 76px;
     cursor: pointer;
   }
@@ -1553,7 +1566,7 @@
   .plus-button {
     position: absolute;
     border: none;
-    top: -11px;
+    top: -10px;
     right: 5px;
     background-color: transparent;
     cursor: pointer;
@@ -1574,12 +1587,12 @@
     opacity: 0.3;
   }
 
-  .negative-button-child {
+  .minus-button-child {
     position: absolute;
     border: none;
     background-color: transparent;
-    top: -39px;
-    right: 78px;
+    top: -38px;
+    right: 79px;
     cursor: pointer;
   }
 
@@ -1587,14 +1600,14 @@
     position: absolute;
     border: none;
     background-color: transparent;
-    top: -35px;
-    right: 8px;
+    top: -33px;
+    right: 7px;
     cursor: pointer;
   }
 
-  .negative-button-child:hover path,
+  .minus-button-child:hover path,
   .plus-button-child:hover path,
-  .negative-button-child:focus path,
+  .minus-button-child:focus path,
   .plus-button-child:focus path {
     fill: #000000;
     fill-opacity: 1;
