@@ -279,6 +279,7 @@
   .advantage-photo-wrapper {
     display: flex;
     flex-direction: row;
+    background-color: #82b3d3;
   }
 
   .advantage-photo-wrapper .advantage-item {
@@ -294,6 +295,12 @@
     flex-direction: row;
   }
 
+  .advantage-item {
+    background-color: #82b3d3;
+    width: 400px;
+    text-align: center;
+  }
+
   .advantage-card-wrapper .advantage-item {
     position: relative;
     width: 230px;
@@ -305,14 +312,8 @@
     background-color: rgba(131, 179, 211, 0.2);
   }
 
-  .advantage-item {
-    background-color: #82b3d3;
-    position: relative;
-    min-width: 230px;
-    padding: 112.5px 85px;
-  }
-
   .advantage-text-wrapper {
+    box-sizing: border-box;
     position: relative;
     width: 400px;
     padding: 102px 85px;
@@ -328,7 +329,17 @@
   }
 
   .advantage-img {
-    display: inherit;
+    position: relative;
+    width: 800px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .advantage-img img {
+    position: absolute;
+    transform: translateX(-50%);
+    height: 100%;
+    left: 50%;
   }
 
   .advantage-h3 {
@@ -374,7 +385,7 @@
   .slogan {
     background-color: #ffffff;
     padding: 64px 347.5px;
-    position: inherit;
+    width: inherit;
   }
 
   .slogan-name {
@@ -532,7 +543,7 @@
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 19px;
+    margin-bottom: 21px;
   }
 
   .subscribe-description {
@@ -542,16 +553,17 @@
     line-height: 26px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 54.3px;
+    margin-bottom: 53.3px;
   }
 
   .subscribe-catalog-title {
     color: #000000;
+    margin-bottom: 19px;
   }
 
   .subscribe-catalog-description {
     color: #333333;
-    margin-bottom: 53.1px;
+    margin-bottom: 53.3px;
   }
 
   .subscribe-form {
