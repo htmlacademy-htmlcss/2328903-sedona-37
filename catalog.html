@@ -56,14 +56,19 @@
           <h1 class="filter-h1">Гостиницы Седоны</h1>
           <div class="breadcrumbs">
             <a href="index.html" class="breadcrumbs-link">
-              <img src="images/home-breadcrumbs.svg" alt="Cсылка на домашнюю страницу" width="13" height="15">
+              <span class="visually-hidden">Переход на главную страницу сайта.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" aria-hidden="true"
+                focusable="false">
+                <path class="path" fill="#fff" d="m6.37.5-6 5.8v6.2h12V6.3l-6-5.8Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
+                <path class="path" fill="#fff" d="M4.37 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+              </svg>
             </a>
             <a href="#" class="breadcrumbs-link">Гостиницы</a>
           </div>
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-form">
               <legend class="filter-legend">
-                <h4 class="filter-form-name">Инфраструктура:</h4>
+                <h2 class="filter-form-name">Инфраструктура:</h2>
               </legend>
               <div class="checkbox-container">
                 <input class="checkbox" type="checkbox" name="pool" id="pool" checked>
@@ -80,7 +85,7 @@
             </fieldset>
             <fieldset class="filter-form">
               <legend class="filter-legend">
-                <h4 class="filter-form-name">Тип жилья:</h4>
+                <h2 class="filter-form-name">Тип жилья:</h2>
               </legend>
               <div class="radio-container">
                 <input class="radio" type="radio" name="house-type" id="hotel" value="hotel" checked>
@@ -97,28 +102,30 @@
             </fieldset>
             <fieldset class="filter-form">
               <legend class="filter-legend">
-                <h4 class="filter-form-name cost">Стоимость, &#8381;:</h4>
+                <h2 class="filter-form-name cost">Стоимость, &#8381;:</h2>
               </legend>
-              <div class="price-wrapper">
-                <label class="price-form">
-                  <input class="price-form-field price-form-first" type="number" min="0" max="15000" name="min-price"
-                    value="0">
-                  <span class="price-form-name">от</span>
-                </label>
-                <label class="price-form">
-                  <input class="price-form-field price-form-second" type="number" min="0" max="12000" name="max-price"
-                    value="9000">
-                  <span class="price-form-name">до</span>
-                </label>
-              </div>
-              <div class="range-scale">
-                <div class="range-bar">
-                  <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Ползунок выбора минимальной цены.</span>
-                  </button>
-                  <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Ползунок выбора максимальной цены.</span>
-                  </button>
+              <div class="price-container">
+                <div class="price-wrapper">
+                  <label class="price-form">
+                    <input class="price-form-field price-form-first" type="number" min="0" max="15000" name="min-price"
+                      value="0">
+                    <span class="price-form-name">от</span>
+                  </label>
+                  <label class="price-form">
+                    <input class="price-form-field price-form-second" type="number" min="0" max="12000" name="max-price"
+                      value="9000">
+                    <span class="price-form-name">до</span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Ползунок выбора минимальной цены.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Ползунок выбора максимальной цены.</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </fieldset>
@@ -130,31 +137,32 @@
         </section>
         <section class="catalog" data-test="catalog">
           <div class="catalog-header-wrapper">
-            <h2 class="catalog-header-h2">Найдено гостиниц: 38</h2>
-            <div class="catalog-sorting">
-              <select class="select-list" name="sorting" id="sorting">
-                <option value="cheap">Сначала дешевые</option>
-                <option value="costly">Сначала дорогие</option>
-                <option value="rating">По рейтингу</option>
-              </select>
-              <ul class="layout-filters">
-                <li>
-                  <button type="button" class="layout-button current-layout" aria-label="раскладка карточками">
-                    <img src="images/list-icon-1.svg" alt="раскладка карточками" width="16" height="14">
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="layout-button" aria-label="раскладка картинка снизу подпись">
-                    <img src="images/list-icon-2.svg" alt="раскладка с надписью снизу" width="16" height="14">
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="layout-button" aria-label="раскладка списком">
-                    <img src="images/list-icon-3.svg" alt="раскладка списком" width="16" height="14">
-                  </button>
-                </li>
-              </ul>
+            <div class="catalog-sorting-container">
+              <h2 class="catalog-header-h2">Найдено гостиниц: 38</h2>
+              <div class="sorting-container">
+                <select class="select-list" name="sorting" id="sorting">
+                  <option value="cheap">Сначала дешевые</option>
+                  <option value="costly">Сначала дорогие</option>
+                  <option value="rating">По рейтингу</option>
+                </select>
+              </div>
             </div>
+            <ul class="layout-filters">
+              <li>
+                <button type="button" class="layout-button current-layout grid-button"
+                  aria-label="раскладка карточками">
+                </button>
+              </li>
+              <li>
+                <button type="button" class="layout-button caption-button"
+                  aria-label="раскладка картинка снизу подпись">
+                </button>
+              </li>
+              <li>
+                <button type="button" class="layout-button list-button" aria-label="раскладка списком">
+                </button>
+              </li>
+            </ul>
           </div>
           <ul class="hotel-list">
             <li class="hotel-item">
@@ -311,7 +319,7 @@
             </a>
           </li>
         </ul>
-        <address class=”phone”>
+        <address class="phone">
           <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
@@ -357,7 +365,7 @@
                   <input class="number-passenger input-adults" type="number" value="2" name="firm-storе" required>
                 </label>
                 <label class="booking-form-button">
-                  <button class="minus-button" type="button">
+                  <button class="minus-button" type="button" aria-label="уменьшить количество">
                     <svg class="minus-button-img" width="14" height="2" viewBox="0 0 14 2" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
@@ -365,7 +373,7 @@
                   </button>
                 </label>
                 <label class="booking-form-button">
-                  <button class="plus-button" type="button">
+                  <button class="plus-button" type="button" aria-label="увеличить количество">
                     <svg class="plus-button-img" width="14" height="14" viewBox="0 0 14 14" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
@@ -373,41 +381,39 @@
                   </button>
                 </label>
               </p>
-              <div class="field auth-form-user-options">
-                <span class="form-label">
-                  <span class="booking-form-input control">
-                    <span class="control-label children">Дети:</span>
-                    <input class="number-passenger" value="2" type="number" name="firm-storе" required>
-                    <label class="booking-form-button">
-                      <button class="minus-button-child" type="button">
-                        <svg class="minus-button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
-                        </svg>
-                      </button>
-                    </label>
-                    <label class="booking-form-button">
-                      <button class="plus-button-child" type="button">
-                        <svg class="plus-button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
-                        </svg>
-                      </button>
-                    </label>
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                        <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="white"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
-                        </svg>
-                      </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,
-                        которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
-                        бесплатно.</span>
-                    </span>
-                  </span>
+              <p class="field auth-form-user-options">
+                <label class="booking-form-input control">
+                  <span class="control-label children">Дети:</span>
+                  <input class="number-passenger" value="2" type="number" name="firm-storе" required>
+                </label>
+                <label class="booking-form-button">
+                  <button class="minus-button-child" type="button" aria-label="уменьшить количество">
+                    <svg class="minus-button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                </label>
+                <label class="booking-form-button">
+                  <button class="plus-button-child" type="button" aria-label="увеличить количество">
+                    <svg class="plus-button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="white"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,
+                    которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
+                    бесплатно.</span>
                 </span>
-              </div>
+              </p>
             </div>
             <a class="booking-form-search" href="#">Найти</a>
           </form>
