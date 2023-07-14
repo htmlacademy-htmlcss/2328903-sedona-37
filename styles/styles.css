@@ -827,8 +827,8 @@
     opacity: 0;
   }
 
-  .checkbox+.filter-form-lable,
-  .radio+.filter-form-lable {
+  .checkbox + .filter-form-lable,
+  .radio + .filter-form-lable {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -842,8 +842,8 @@
     cursor: pointer;
   }
 
-  .checkbox+.filter-form-lable::before,
-  .radio+.filter-form-lable::before {
+  .checkbox + .filter-form-lable::before,
+  .radio + .filter-form-lable::before {
     content: " ";
     display: block;
     width: 20px;
@@ -853,22 +853,22 @@
     background-color: #ffffff;
   }
 
-  .checkbox+.filter-form-lable::before {
+  .checkbox + .filter-form-lable::before {
     border-radius: 4px;
   }
 
-  .radio+.filter-form-lable::before {
+  .radio + .filter-form-lable::before {
     border-radius: 50%;
   }
 
-  .checkbox:checked+.filter-form-lable::before {
+  .checkbox:checked + .filter-form-lable::before {
     background-image: url("../images/check.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 14px 10px;
   }
 
-  .radio:checked+.filter-form-lable::before {
+  .radio:checked + .filter-form-lable::before {
     background-image: url("../images/radio-circle.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -885,8 +885,8 @@
     opacity: 0.3;
   }
 
-  .checkbox:focus+.filter-form-lable::before,
-  .radio:focus+.filter-form-lable::before {
+  .checkbox:focus + .filter-form-lable::before,
+  .radio:focus + .filter-form-lable::before {
     box-shadow: 0 0 0 3px #83b3d3;
   }
 
@@ -1042,7 +1042,7 @@
   }
 
   .reset:active {
-    color: rgba(255, 255, 255, 0.30);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .apply {
@@ -1714,8 +1714,8 @@
     padding: 21px 18px 22px 23px;
   }
 
-  .tooltip-toggle:hover+.tooltip-text,
-  .tooltip-toggle:focus+.tooltip-text {
+  .tooltip-toggle:hover + .tooltip-text,
+  .tooltip-toggle:focus + .tooltip-text {
     display: block;
   }
 
