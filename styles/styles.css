@@ -429,7 +429,6 @@
   .food-advantage,
   .souvenir-advantage {
     padding: 76px 85px;
-    ;
     max-width: 230px;
     min-height: 233px;
     position: inherit;
@@ -791,7 +790,7 @@
   }
 
   .breadcrumbs-link:active {
-    color: rgba(255, 255, 255, 0.30);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   /* Filters */
@@ -894,7 +893,6 @@
   .checkbox-container:disabled,
   .radio-container:disabled {
     color: #e5e5e5;
-    ;
   }
 
   /* Price */
@@ -1035,7 +1033,7 @@
   }
 
   .reset:hover {
-    color: #ffffff8d;
+    color: rgba(255, 255, 255, 0.55);
   }
 
   .reset:focus {
@@ -1044,7 +1042,7 @@
   }
 
   .reset:active {
-    color: #ffffff4d;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .apply {
@@ -1097,10 +1095,12 @@
     width: 380px;
   }
 
-  .sorting-container {
-    position: absolute;
-    right: 230px;
-    top: 17px;
+  .catalog-sorting-container {
+    display: flex;
+    align-items: center;
+    max-width: 522px;
+    margin-left: auto;
+    flex-direction: row;
   }
 
   .select-list {
@@ -1129,8 +1129,8 @@
   }
 
   .select-list:disabled {
-    border: 2px solid rgba(0, 0, 0, 0.30);
-    color: rgba(0, 0, 0, 0.30);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
   }
 
   .layout-filters {
@@ -1142,7 +1142,7 @@
     max-width: 230px;
     gap: 11px;
     margin: 0;
-    margin-left: 520px;
+    margin-left: 70px;
     padding: 0;
   }
 
@@ -1597,7 +1597,11 @@
     padding: 0;
   }
 
-  .booking-form-button {
+  .children-label-container {
+    padding-left: 88px;
+  }
+
+  .booking-form-button-wrapper {
     position: relative;
     display: block;
   }
@@ -1606,15 +1610,15 @@
     position: absolute;
     border: none;
     background-color: transparent;
-    top: -14px;
-    right: 76px;
+    top: -16px;
+    right: 77px;
     cursor: pointer;
   }
 
   .plus-button {
     position: absolute;
     border: none;
-    top: -10px;
+    top: -12px;
     right: 5px;
     background-color: transparent;
     cursor: pointer;
@@ -1639,8 +1643,8 @@
     position: absolute;
     border: none;
     background-color: transparent;
-    top: -14px;
-    right: 79px;
+    top: -16px;
+    right: 78px;
     cursor: pointer;
   }
 
@@ -1648,7 +1652,7 @@
     position: absolute;
     border: none;
     background-color: transparent;
-    top: -10px;
+    top: -12px;
     right: 7px;
     cursor: pointer;
   }
